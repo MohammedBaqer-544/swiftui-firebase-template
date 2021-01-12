@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7659AD5B25ADE7FF009DF7A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7659AD5A25ADE7FF009DF7A3 /* GoogleService-Info.plist */; };
+		7659AD8325AE02DC009DF7A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7659AD8225AE02DC009DF7A3 /* GoogleService-Info.plist */; };
 		D2C079A2259813E70053EDFD /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C079A1259813E70053EDFD /* MainApp.swift */; };
 		D2C079AD259815F30053EDFD /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C079AC259815F30053EDFD /* SignIn.swift */; };
 		D2C079B2259816BD0053EDFD /* FirebaseEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C079B1259816BD0053EDFD /* FirebaseEnv.swift */; };
@@ -62,7 +62,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7659AD5A25ADE7FF009DF7A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7659AD8225AE02DC009DF7A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9377AE6CE82235456148A2D9 /* Pods-FirebaseTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTemplate.release.xcconfig"; path = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		B1FD124CAB9AE9745E818900 /* Pods-FirebaseTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTemplate.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		D2C079A1259813E70053EDFD /* MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApp.swift; sourceTree = "<group>"; };
@@ -216,7 +216,6 @@
 		D2C26FC724662807005E16A3 = {
 			isa = PBXGroup;
 			children = (
-				7659AD5A25ADE7FF009DF7A3 /* GoogleService-Info.plist */,
 				D2C26FE7246628B8005E16A3 /* iOS */,
 				D2C26FD224662807005E16A3 /* FirebaseTemplate */,
 				D2C26FD124662807005E16A3 /* Products */,
@@ -236,6 +235,7 @@
 		D2C26FD224662807005E16A3 /* FirebaseTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				7659AD8225AE02DC009DF7A3 /* GoogleService-Info.plist */,
 				D2C079A1259813E70053EDFD /* MainApp.swift */,
 				D2C079A9259815BD0053EDFD /* Views */,
 				D2C079B0259816AA0053EDFD /* Environments */,
@@ -399,7 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2C26FE024662809005E16A3 /* LaunchScreen.storyboard in Resources */,
-				7659AD5B25ADE7FF009DF7A3 /* GoogleService-Info.plist in Resources */,
+				7659AD8325AE02DC009DF7A3 /* GoogleService-Info.plist in Resources */,
 				D2C26FDD24662809005E16A3 /* Preview Assets.xcassets in Resources */,
 				D2C26FDA24662809005E16A3 /* Assets.xcassets in Resources */,
 			);
