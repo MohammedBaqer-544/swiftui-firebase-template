@@ -10,18 +10,62 @@ import SwiftUI
 
 struct AuthenticationView: View {
     var body: some View {
-        NavigationView {
-            VStack{
-                NavigationLink(
-                    destination: SignIn(),
-                    label: {Text("Sign in").modifier(SignInModifier())}
-                )
-                NavigationLink(
-                    destination: SignUp(),
-                    label: {Text("Create an account")}
-                )
+
+            NavigationView {
+                ZStack {
+                    Image("fBG")
+                        .resizable()
+                        .ignoresSafeArea()
+                    
+                VStack{
+                    
+                    Text("مرحباً بكم !")
+                        .font(.custom("ArefRuqaa-Regular", size: 80))
+                        .foregroundColor(.init("Coffee"))
+                        .padding()
+                    
+                    Text("كبتي")
+                        .font(.custom("ArefRuqaa-Regular", size: 50))
+                        .foregroundColor(.init("Brown Sugar"))
+                        .padding()
+                    
+                    Spacer()
+                    Spacer()
+
+                    NavigationLink(
+                        destination: SignIn(),
+                        label: {
+                            Text("تسجيل الدخول")
+                                .font(.custom("Montserrat-Medium", size: 30))
+                                .foregroundColor(.init("Cafe"))
+                                .padding()
+                                .frame(width: 312.0, height: 55.0)
+                                .background(Color.init("Almond"))
+                                .clipShape(Capsule())
+                                .shadow(color: Color.init("Desert"), radius: 30, x: 15, y: 15)
+                            
+                        }
+                    )
+                    .padding()
+                    
+                    NavigationLink(
+                        destination: SignUp(),
+                        label: {
+                            Text("انشئ حساب")
+                                .font(.custom("Montserrat-Medium", size: 30))
+                                .foregroundColor(.init("Almond"))
+                                .padding()
+                                .frame(width: 312.0, height: 55.0)
+                                .background(Color.init("Cafe"))
+                                .clipShape(Capsule())
+                                .shadow(color: Color.init("Desert"), radius: 30, x: 15, y: 15)
+                        }
+                    )
+                    
+                    Spacer()
+
+                }
             }
-            .navigationTitle("Home")
         }
     }
 }
