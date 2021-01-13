@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		760783BE25AF67B5000A5DEC /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760783B925AF67B4000A5DEC /* Post.swift */; };
+		760783BF25AF67B5000A5DEC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760783BA25AF67B4000A5DEC /* HomeView.swift */; };
+		760783C025AF67B5000A5DEC /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760783BB25AF67B4000A5DEC /* Notifications.swift */; };
+		760783C125AF67B5000A5DEC /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760783BC25AF67B5000A5DEC /* Profile.swift */; };
+		760783C225AF67B5000A5DEC /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760783BD25AF67B5000A5DEC /* Main.swift */; };
 		7659AD8325AE02DC009DF7A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7659AD8225AE02DC009DF7A3 /* GoogleService-Info.plist */; };
 		7659ADBF25AE15EC009DF7A3 /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7659ADA825AE15EC009DF7A3 /* Montserrat-LightItalic.ttf */; };
 		7659ADC025AE15EC009DF7A3 /* AndikaNewBasic-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7659ADAA25AE15EC009DF7A3 /* AndikaNewBasic-BoldItalic.ttf */; };
@@ -84,6 +89,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		760783B925AF67B4000A5DEC /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		760783BA25AF67B4000A5DEC /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		760783BB25AF67B4000A5DEC /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		760783BC25AF67B5000A5DEC /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		760783BD25AF67B5000A5DEC /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		7659AD8225AE02DC009DF7A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7659ADA825AE15EC009DF7A3 /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
 		7659ADAA25AE15EC009DF7A3 /* AndikaNewBasic-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AndikaNewBasic-BoldItalic.ttf"; sourceTree = "<group>"; };
@@ -260,6 +270,11 @@
 			children = (
 				D2C079BD259819FD0053EDFD /* MainView.swift */,
 				D2C079C625981C260053EDFD /* Home.swift */,
+				760783BA25AF67B4000A5DEC /* HomeView.swift */,
+				760783BD25AF67B5000A5DEC /* Main.swift */,
+				760783BB25AF67B4000A5DEC /* Notifications.swift */,
+				760783B925AF67B4000A5DEC /* Post.swift */,
+				760783BC25AF67B5000A5DEC /* Profile.swift */,
 				D2C079C9259821F40053EDFD /* Item */,
 				D2C079C425981C1A0053EDFD /* Authentication */,
 			);
@@ -561,17 +576,22 @@
 				D2C2704C24662C6E005E16A3 /* Networking.swift in Sources */,
 				D2C079BE259819FD0053EDFD /* MainView.swift in Sources */,
 				D2C079D0259822090053EDFD /* ListItems.swift in Sources */,
+				760783C025AF67B5000A5DEC /* Notifications.swift in Sources */,
 				D2C079C725981C260053EDFD /* Home.swift in Sources */,
 				D2C2705724662F3F005E16A3 /* Item.swift in Sources */,
+				760783C225AF67B5000A5DEC /* Main.swift in Sources */,
 				D2C079D9259843330053EDFD /* OptionalState.swift in Sources */,
 				D2C2704B24662C68005E16A3 /* Optional.swift in Sources */,
 				D2C079A2259813E70053EDFD /* MainApp.swift in Sources */,
 				D2C2704924662C68005E16A3 /* Codable.swift in Sources */,
+				760783BE25AF67B5000A5DEC /* Post.swift in Sources */,
 				D2C2704724662C63005E16A3 /* ValidatePassword.swift in Sources */,
 				D2C079B2259816BD0053EDFD /* FirebaseEnv.swift in Sources */,
 				D2C079D6259841D10053EDFD /* ItemsEnv.swift in Sources */,
 				D2C2704A24662C68005E16A3 /* Keyboard.swift in Sources */,
 				D2C2704624662C63005E16A3 /* ImageUploader.swift in Sources */,
+				760783BF25AF67B5000A5DEC /* HomeView.swift in Sources */,
+				760783C125AF67B5000A5DEC /* Profile.swift in Sources */,
 				D2C079CC259822010053EDFD /* AddItem.swift in Sources */,
 				D2C079B6259818A20053EDFD /* SignUp.swift in Sources */,
 				D2C2705224662C9A005E16A3 /* User.swift in Sources */,

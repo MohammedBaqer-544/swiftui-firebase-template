@@ -13,6 +13,25 @@ struct SignUp: View {
     @State var user = User()
     @State var password = ""
     @EnvironmentObject var env: FirebaseEnv
+    @State private var error: String = ""
+    @State private var showingAlert = false
+    @State private var alertTitale: String = "أوه لااا"
+    
+    func errorCheck() -> String? {
+        if user.Name.trimmingCharacters(in: .whitespaces).isEmpty || user.email.trimmingCharacters(in: .whitespaces).isEmpty || password.trimmingCharacters(in: .whitespaces).isEmpty {
+            
+            return "يرجى تعبئة جميع الحقول"
+        }
+        return nil
+    }
+    
+    func signUp1() {
+        if let error = errorCheck() {
+            self.error = error
+            self.showingAlert = true
+            return
+        }
+    }
     
     var body: some View {
         
@@ -126,6 +145,7 @@ struct SignUp: View {
                 
                 Button(action: {
                     env.signUp(user: user, password: password)
+                    signUp1()
                 }
                 , label: {
                     Text("انشئ حساب")
@@ -137,7 +157,9 @@ struct SignUp: View {
                         .clipShape(Capsule())
                         .shadow(color: Color.init("Desert"), radius: 30, x: 15, y: 15)
                         .padding()
-                })
+                }).alert(isPresented: $showingAlert) {
+                    Alert(title: Text(alertTitale), message: Text(error), dismissButton: .default(Text("حسناً")))
+                }
                 NavigationLink("لديك حساب بالفعل؟ سجل دخولك", destination: SignIn())
                     .foregroundColor(.init("Liver"))
                 
