@@ -110,12 +110,13 @@ struct PostRow: View {
         VStack(spacing: 15){
             
             HStack(spacing: 10){
-                
-                WebImage(url: URL(string: post.user.pic)!)
+
+                WebImage(url: URL(string: post.user.pic))
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 50, height: 50)
                     .clipShape(Circle())
+                
                 
                 Text(post.user.username)
                     .foregroundColor(.white)

@@ -127,7 +127,7 @@ struct Settings1: View {
                 Text("Settings")
                     .font(.largeTitle)
                     .fontWeight(.heavy)
-                    .foregroundColor(.white)
+                    .foregroundColor(Color("Liver"))
                 
                 Spacer(minLength: 0)
                 
@@ -135,7 +135,7 @@ struct Settings1: View {
             .padding()
             .padding(.top,edges!.top)
             // Top Shadow Effect...
-            .background(Color("bg"))
+            .background(Color("Tan"))
             .shadow(color: Color.white.opacity(0.06), radius: 5, x: 0, y: 5)
             
             if settingsData.userInfo.pic != ""{
@@ -151,7 +151,7 @@ struct Settings1: View {
                     if settingsData.isLoading{
                         
                         ProgressView()
-                            .progressViewStyle(CircularProgressViewStyle(tint: Color.blue))
+                            .progressViewStyle(CircularProgressViewStyle(tint: Color("Coffee")))
                     }
                 }
                 .padding(.top,25)
@@ -169,12 +169,12 @@ struct Settings1: View {
                 
                 // Edit Button...
                 
-                Button(action: {settingsData.updateDetails(field: "Name")}) {
-                    
-                    Image(systemName: "pencil.circle.fill")
-                        .font(.system(size: 24))
-                        .foregroundColor(.white)
-                }
+//                Button(action: {settingsData.updateDetails(field: "Name")}) {
+//
+//                    Image(systemName: "pencil.circle.fill")
+//                        .font(.system(size: 24))
+//                        .foregroundColor(.white)
+//                }
             }
             .padding()
             
@@ -185,24 +185,32 @@ struct Settings1: View {
                 
                 // Edit Button...
                 
-                Button(action: {settingsData.updateDetails(field: "Bio")}) {
-                    
-                    Image(systemName: "pencil.circle.fill")
-                        .font(.system(size: 24))
-                        .foregroundColor(.white)
-                }
+//                Button(action: {settingsData.updateDetails(field: "Bio")}) {
+//                    
+//                    Image(systemName: "pencil.circle.fill")
+//                        .font(.system(size: 24))
+//                        .foregroundColor(.white)
+//                }
             }
 
             // LogOut Button...
             
             Button(action: env.signOut, label: {
                 Text("Logout")
-                    .foregroundColor(.white)
-                    .fontWeight(.bold)
-                    .padding(.vertical)
-                    .frame(width: UIScreen.main.bounds.width - 100)
-                    .background(Color.blue)
+//                    .foregroundColor(.white)
+//                    .fontWeight(.bold)
+//                    .padding(.vertical)
+//                    .frame(width: UIScreen.main.bounds.width - 100)
+//                    .background(Color.blue)
+//                    .clipShape(Capsule())
+                    .font(.custom("Montserrat-Medium", size: 30))
+                    .foregroundColor(.init("Almond"))
+                    .padding()
+                    .frame(width: 312.0, height: 55.0)
+                    .background(Color.init("Cafe"))
                     .clipShape(Capsule())
+                    .shadow(color: Color.init("Desert"), radius: 30, x: 15, y: 15)
+                    .padding()
             })
             .padding()
             .padding(.top,10)

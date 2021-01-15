@@ -96,7 +96,7 @@ struct Post1: View {
                 Text("Posts")
                     .font(.largeTitle)
                     .fontWeight(.heavy)
-                    .foregroundColor(.white)
+                    .foregroundColor(Color("Liver"))
                 
                 Spacer(minLength: 0)
                 
@@ -104,13 +104,13 @@ struct Post1: View {
                     
                     Image(systemName: "square.and.pencil")
                         .font(.title)
-                        .foregroundColor(Color("blue"))
+                        .foregroundColor(Color("Liver"))
                 }
             }
             .padding()
             .padding(.top,edges!.top)
             // Top Shadow Effect...
-            .background(Color("bg"))
+            .background(Color("Tan"))
             .shadow(color: Color.white.opacity(0.06), radius: 5, x: 0, y: 5)
             
             if postData.posts.isEmpty{

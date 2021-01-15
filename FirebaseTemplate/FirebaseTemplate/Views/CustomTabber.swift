@@ -62,7 +62,7 @@ struct CustomTabbar: View {
             TabButton(title: "Settings", selectedTab: $selectedTab)
         }
         .padding(.horizontal)
-        .background(Color.white)
+        .background(Color("Cafe"))
         .clipShape(Capsule())
     }
 }
