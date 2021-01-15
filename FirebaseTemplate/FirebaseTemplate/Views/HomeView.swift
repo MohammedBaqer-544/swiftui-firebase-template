@@ -4,23 +4,28 @@
 //
 //  Created by Mohammed on 1/13/21.
 //
-
+/*
 import SwiftUI
 
+
+
 struct HomeView: View {
-    
-    
-    
-    
-    
+ 
     
     var body: some View {
         
-        VStack {
+        NavigationView {
+            
+            
             CustomTabView()
+                .navigationTitle("")
+                .navigationBarTitleDisplayMode(.inline)
+                .navigationBarHidden(true)
+                
             
             
-        }
+            
+        }.accentColor(.red)
     }
 }
 
@@ -32,49 +37,46 @@ struct CustomTabView: View {
     
     
     var body: some View {
-    ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom)) {
         
-        TabView(selection: $selectedTab) {
-            Main()
-                .tag("house.fill")
-            Post()
-                .tag("camera.viewfinder")
-            Notifications()
-                .tag("heart.fill")
-            Profile()
-                .tag("person.fill")
+        ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom)) {
             
-        }
-        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
-        .ignoresSafeArea(.all, edges: .bottom)
-
+                TabView(selection: $selectedTab) {
+                    Main()
+                        .tag("house.fill")
+                    Post()
+                        .tag("camera.viewfinder")
+                    Profile()
+                        .tag("person.fill")
+                    
+                }
         
-        
-        HStack(spacing: 0) {
-            ForEach(tabs, id: \.self) {
-                image in
-                TabButton(image: image, selectedTab: $selectedTab)
-                
-                if image != tabs.last {
-                    Spacer(minLength: 0)
+            
+            
+            HStack(spacing: 0) {
+                ForEach(tabs, id: \.self) {
+                    image in
+                    TabButton(image: image, selectedTab: $selectedTab)
+                    
+                    if image != tabs.last {
+                        Spacer(minLength: 0)
+                    }
+                    
                 }
                 
             }
+            .padding(.horizontal, 25)
+            .padding(.vertical, 5)
+            .background(Color.white)
+            .clipShape(Capsule())
+            .shadow(color: Color.black.opacity(0.15), radius: 5, x: 5, y: 5)
+            .shadow(color: Color.black.opacity(0.15), radius: 5, x: -5, y: -5)
+            .padding(.horizontal)
+            .padding(.bottom, edge!.bottom == 0 ? 20 : 0)
+            
             
         }
-        .padding(.horizontal, 25)
-        .padding(.vertical, 5)
-        .background(Color.white)
-        .clipShape(Capsule())
-        .shadow(color: Color.black.opacity(0.15), radius: 5, x: 5, y: 5)
-        .shadow(color: Color.black.opacity(0.15), radius: 5, x: -5, y: -5)
-        .padding(.horizontal)
-        .padding(.bottom, edge!.bottom == 0 ? 20 : 0)
-        
-        
-    }
-    .ignoresSafeArea(.keyboard, edges: .bottom)
-    .background(Color.black.opacity(0.05).ignoresSafeArea(.all, edges: .all))
+        .ignoresSafeArea(.keyboard, edges: .bottom)
+        .background(Color.black.opacity(0.05).ignoresSafeArea(.all, edges: .all))
     }
     
     
@@ -111,3 +113,4 @@ struct HomeView_Previews: PreviewProvider {
     }
 }
 
+*/

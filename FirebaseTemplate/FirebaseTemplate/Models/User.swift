@@ -8,6 +8,8 @@ typealias FirebaseUser = Firebase.User
 struct User: Codable{
     var Name: String = ""
     var email: String = ""
+    var uid: String = ""
+    var profileImageUrl: String = ""
     
 }
 

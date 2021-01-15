@@ -4,7 +4,7 @@
 //
 //  Created by Mohammed on 1/13/21.
 //
-
+/*
 import SwiftUI
 
 struct Post: View {
@@ -31,10 +31,19 @@ struct Post: View {
         if let error = errorCheck() {
             self.error = error
             self.showingAlert = true
+            self.clear()
             return
         }
-        self.clear()
         
+        PostService.uploadPost(caption: text, imageData: imageData, onSuccess: {
+            self.clear()
+        }) {
+            (errorMessage) in
+            
+            self.error = errorMessage
+            self.showingAlert = true
+            return
+        }
         
     }
     
@@ -125,3 +134,4 @@ struct Post_Previews: PreviewProvider {
         Post()
     }
 }
+*/
