@@ -5,95 +5,7 @@
 //  Created by Mohammed on 1/15/21.
 //  Copyright © 2021 MohammedBaqer. All rights reserved.
 //
-/*
-import SwiftUI
-import SDWebImageSwiftUI
-import Firebase
 
-struct PostRow: View {
-    
-    var post: PostModel1
-    @ObservedObject var postData: PostViewModel
-    let uid = Auth.auth().currentUser!.uid
-    
-    var body: some View {
-        
-        VStack(spacing: 15) {
-            
-            HStack(spacing: 10){
-                
-                WebImage(url: URL(string: post.user.pic)!)
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 50, height: 50)
-                    .clipShape(Circle())
-                
-                Text(post.user.username)
-                    .foregroundColor(.white)
-                    .fontWeight(.bold)
-                
-                Spacer(minLength: 0)
-                
-                if post.user.uid == uid{
-                    
-                    Menu(content: {
-                        
-                        Button(action: {postData.editPost(id: post.id)}) {
-                            
-                            Text("Edit")
-                        }
-
-                        Button(action: {postData.deletPost(id: post.id)}) {
-                            
-                            Text("Delet")
-                        }
-                        
-                    }, label: {
-                        
-                        Image("menu")
-                            .renderingMode(.template)
-                            .resizable()
-                            .frame(width: 18, height: 18)
-                            .foregroundColor(.white)
-                    })
-                }
-            }
-            
-            if post.pic != ""{
-                
-                WebImage(url: URL(string: post.pic)!)
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: UIScreen.main.bounds.width - 60, height: 250)
-                    .cornerRadius(15)
-            }
-            
-            HStack {
-                
-                Text(post.title)
-                    .fontWeight(.bold)
-                    .foregroundColor(.white)
-                
-                Spacer(minLength: 0)
-            }
-            .padding(.top,5)
-            
-            HStack {
-                
-                Spacer(minLength: 0)
-                
-                Text(post.time, style: .time)
-                    .font(.caption)
-                    .fontWeight(.bold)
-                    .foregroundColor(.white)
-            }
-        }
-        .padding()
-        .background(Color.white.opacity(0.06))
-        .cornerRadius(15)
-    }
-}
-*/
 
 import SwiftUI
 import SDWebImageSwiftUI
@@ -119,7 +31,7 @@ struct PostRow: View {
                 
                 
                 Text(post.user.username)
-                    .foregroundColor(.white)
+                    .foregroundColor(Color("Coffee"))
                     .fontWeight(.bold)
                 
                 Spacer(minLength: 0)
@@ -146,7 +58,7 @@ struct PostRow: View {
                             .renderingMode(.template)
                             .resizable()
                             .frame(width: 18, height: 18)
-                            .foregroundColor(.white)
+                            .foregroundColor(Color("Cafe"))
                     })
                 }
             }
@@ -164,7 +76,7 @@ struct PostRow: View {
                 
                 Text(post.title)
                     .fontWeight(.bold)
-                    .foregroundColor(.white)
+                    .foregroundColor(Color("Coffee"))
                 
                 Spacer(minLength: 0)
             }
@@ -177,11 +89,11 @@ struct PostRow: View {
                 Text(post.time,style: .time)
                     .font(.caption)
                     .fontWeight(.bold)
-                    .foregroundColor(.white)
+                    .foregroundColor(Color("Cafe"))
             }
         }
         .padding()
-        .background(Color.white.opacity(0.06))
+        .background(Color("Liver").opacity(0.1)) 
         .cornerRadius(15)
     }
 }

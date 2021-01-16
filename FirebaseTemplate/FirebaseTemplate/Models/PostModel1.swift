@@ -5,18 +5,7 @@
 //  Created by Mohammed on 1/15/21.
 //  Copyright © 2021 MohammedBaqer. All rights reserved.
 //
-/*
-import SwiftUI
 
-struct PostModel1: Identifiable {
-    
-    var id: String
-    var title: String
-    var pic: String
-    var time: Date
-    var user: UserModel
-}
-*/
 
 import SwiftUI
 

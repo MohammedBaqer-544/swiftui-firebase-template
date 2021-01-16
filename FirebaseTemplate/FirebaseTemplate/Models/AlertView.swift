@@ -5,14 +5,7 @@
 //  Created by Mohammed on 1/15/21.
 //  Copyright © 2021 MohammedBaqer. All rights reserved.
 //
-/*
-import SwiftUI
 
-func alerView(msg: String,completion: @escaping (String) -> ()){
-    
-    
-}
-*/
 
 import SwiftUI
 
